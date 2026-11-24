@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/jpeg" href="icono.png" sizes="32x32">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG BUZOS - Luxury Hoodies Factory</title>
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- CINTA SUPERIOR TIPO CAMPAÑA DE MARCA -->
+    <div class="top-marquee">
+        <div class="marquee-track">
+            <span>✦ LG BUZOS • LUXURY HOODIES FACTORY ✦</span>
+            <span>ENVÍOS NACIONALES A TODA COLOMBIA</span>
+            <span>✦ ALGODÓN PERCHADO DE ALTA GAMA ✦</span>
+            <span>DISEÑOS EXCLUSIVOS Y PERSONALIZADOS</span>
+            <span>✦ COLECCIÓN 2026 DISPONIBLE ✦</span>
+            <!-- Bucle continuo -->
+            <span>✦ LG BUZOS • LUXURY HOODIES FACTORY ✦</span>
+            <span>ENVÍOS NACIONALES A TODA COLOMBIA</span>
+            <span>✦ ALGODÓN PERCHADO DE ALTA GAMA ✦</span>
+            <span>DISEÑOS EXCLUSIVOS Y PERSONALIZADOS</span>
+            <span>✦ COLECCIÓN 2026 DISPONIBLE ✦</span>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header>
+        <div class="header-container">
+            <a href="#inicio" class="logo-container">
+                <img src="Logo.jpeg" alt="Logo LG Buzos" class="logo-img">
+                <span class="brand-title">LG BUZOS</span>
+            </a>
+            
+            <!-- Botón de 3 Barras para Celulares -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menú de Navegación -->
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio" onclick="closeMobileMenu()">Inicio</a>
+                <a href="#colecciones" onclick="closeMobileMenu()">Colecciones</a>
+                <a href="#catalogo" onclick="closeMobileMenu()">Catálogo</a>
+                <a href="#experiencia" onclick="closeMobileMenu()">La Marca</a>
+                <a href="#nosotros" onclick="closeMobileMenu()">Nosotros</a>
+                <a href="#contacto" onclick="closeMobileMenu()">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION PORTADA FLAGSHIP -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-logo-box">
+                <img src="Logo.jpeg" alt="Logo Central LG" class="hero-center-logo">
+            </div>
+            <p class="hero-tagline">EST. 2026 • LUXURY STREETWEAR</p>
+            <h1>LUXURY HOODIES FACTORY</h1>
+            <p class="hero-subtitle">Buzos y hoodies de alta gama confeccionados con maestría para lucir un estilo único e inconfundible.</p>
+            
+            <div class="hero-buttons">
+                <a href="#catalogo" class="btn-hero-gold">
+                    EXPLORAR CATÁLOGO
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=573107707763&text=Hola%20LG%20BUZOS,%20quiero%20recibir%20asesor%C3%ADa%20personalizada" target="_blank" class="btn-hero-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Asesoría VIP
+                </a>
+            </div>
+
+            <!-- SELLOS DE IDENTIDAD DE MARCA -->
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fa-solid fa-crown"></i>
+                    <span>Confección Premium</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Estampado Alta Definición</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Envíos a Todo el País</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN LOOKBOOK / COLECCIONES DESTACADAS -->
+    <section id="colecciones" class="collections-section">
+        <div class="section-wrapper">
+            <p class="eyebrow-title">CURADURÍA EXCLUSIVA</p>
+            <h2 class="section-title">COLECCIONES DE TEMPORADA</h2>
+            <div class="divider"></div>
+
+            <div class="collections-grid">
+                <div class="collection-banner" onclick="jumpToCategory('navidad')">
+                    <img src="WhatsApp Image 2026-11-11 at 10.03.47 AM.jpeg" alt="Colección Navidad LG Buzos">
+                    <div class="collection-overlay">
+                        <span class="collection-tag">EDICIÓN FESTIVA</span>
+                        <h3>Navidad & Familia</h3>
+                        <p>Diseños temáticos y personalizados para compartir en familia.</p>
+                        <span class="collection-link">Ver Colección <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="collection-banner" onclick="jumpToCategory('anime')">
+                    <img src="imagen 10.jpeg" alt="Colección Anime LG Buzos">
+                    <div class="collection-overlay">
+                        <span class="collection-tag">CULTURA POP</span>
+                        <h3>Anime Edition</h3>
+                        <p>Ilustraciones vibrantes y cortes urbanos de alto impacto.</p>
+                        <span class="collection-link">Ver Colección <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+
+                <div class="collection-banner" onclick="jumpToCategory('streetwear')">
+                    <img src="WhatsApp Image 2026-11-11 at 10.03.48 AM (1).jpeg" alt="Colección Streetwear y Música">
+                    <div class="collection-overlay">
+                        <span class="collection-tag">DROP EXCLUSIVO</span>
+                        <h3>Streetwear & Música</h3>
+                        <p>Piezas icónicas inspiradas en el motor, el rock y el pop global.</p>
+                        <span class="collection-link">Ver Colección <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO PRINCIPAL -->
+    <main id="catalogo" class="catalog-container">
+        <p class="eyebrow-title">ARCHIVO OFICIAL</p>
+        <h2 class="section-title">NUESTROS BUZOS EXCLUSIVOS</h2>
+        <div class="divider"></div>
+
+        <!-- BUSCADOR Y FILTROS -->
+        <div class="catalog-controls">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Buscar diseño (ej. Goku, Grinch, Garfield, Katseye...)" onkeyup="filterProducts()">
+            </div>
+
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-filter="todos">Todos (21)</button>
+                <button class="filter-btn" data-filter="navidad">Navidad</button>
+                <button class="filter-btn" data-filter="anime">Anime</button>
+                <button class="filter-btn" data-filter="caricaturas">Caricaturas</button>
+                <button class="filter-btn" data-filter="streetwear">Streetwear & Música</button>
+            </div>
+        </div>
+
+        <p id="noResultsMsg" class="no-results" style="display: none;">
+            No encontramos ese diseño en el catálogo. ¡Escríbenos a WhatsApp y lo creamos para ti!
+        </p>
+        
+        <div class="products-grid" id="productsGrid">
+            
+            <!-- Producto 1 -->
+            <div class="product-card" data-category="streetwear">
+                <span class="product-badge badge-top">TOP VENTAS</span>
+                <div class="img-wrapper"><img src="imagen 1.jpeg" alt="Buzo Biker Racing Green" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Biker Racing Green</h3>
+                    <p class="product-desc-short">Diseño biker con gráfico de piloto y logotipos en verde fluorescente.</p>
+                    <button class="btn-details" onclick="openModal('imagen 1.jpeg', 'Buzo Biker Racing Green', 'Hoodie deportivo estilo motero / racing con gráficos de piloto de carreras, estampados en mangas y pechera en verde neón sobre fondo negro.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-category="streetwear">
+                <div class="img-wrapper"><img src="imagen 2.jpeg" alt="Buzo Rock Legend Queen" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Rock Legend Queen</h3>
+                    <p class="product-desc-short">Diseño clásico con el icónico logo e integrantes de la banda Queen.</p>
+                    <button class="btn-details" onclick="openModal('imagen 2.jpeg', 'Buzo Rock Legend Queen', 'Hoodie negro tributo a la legendaria banda de rock Queen con serigrafía de alta definición y finas terminaciones afelpadas.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card" data-category="caricaturas">
+                <div class="img-wrapper"><img src="imagen 3.jpeg" alt="Buzo Mafalda Ponte Feliz" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Mafalda "Ponte Feliz"</h3>
+                    <p class="product-desc-short">Diseño completo con cremallera y frase célebre en la espalda.</p>
+                    <button class="btn-details" onclick="openModal('imagen 3.jpeg', 'Buzo Mafalda Ponte Feliz', 'Chaqueta hoodie con cremallera frontal, estampado de Mafalda y la frase ¡Cuando no sepas qué ponerte ponte feliz! en la espalda.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card" data-category="caricaturas">
+                <div class="img-wrapper"><img src="imagen 4.jpeg" alt="Buzo Garfield Classic" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Garfield Classic</h3>
+                    <p class="product-desc-short">Estampado de Garfield abrazando a Pooky en la espalda.</p>
+                    <button class="btn-details" onclick="openModal('imagen 4.jpeg', 'Buzo Garfield Classic', 'Hoodie con cremallera y diseño de Garfield. Cuenta con estampado en pecho, mangas y gran ilustración trasera.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="product-card" data-category="navidad caricaturas">
+                <span class="product-badge badge-family">FAMILIAR</span>
+                <div class="img-wrapper"><img src="imagen 5.jpeg" alt="Colección Familiar Snoopy" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Colección Familiar Snoopy</h3>
+                    <p class="product-desc-short">Buzos combinados en verde esmeralda con detalles rojos navideños.</p>
+                    <button class="btn-details" onclick="openModal('imagen 5.jpeg', 'Colección Familiar Snoopy', 'Combos familiares de buzos Snoopy Ho Ho Ho en color verde esmeralda con capota roja. Disponibles para adultos e infantiles.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="product-card" data-category="anime">
+                <span class="product-badge badge-limited">FULL PRINT</span>
+                <div class="img-wrapper"><img src="imagen 6.jpeg" alt="Buzo Anime Majin Buu" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Anime Majin Buu</h3>
+                    <p class="product-desc-short">Estampado Full Print violeta y blanco de Dragon Ball Z.</p>
+                    <button class="btn-details" onclick="openModal('imagen 6.jpeg', 'Buzo Anime Majin Buu', 'Diseño anime de alta resolución dedicado a Majin Buu con detalles en tonos morados neón y kanjis japoneses.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="product-card" data-category="navidad">
+                <span class="product-badge badge-xmas">NAVIDAD</span>
+                <div class="img-wrapper"><img src="imagen 7.jpeg" alt="Buzo The Grinch Red" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo The Grinch Red</h3>
+                    <p class="product-desc-short">Buzo cuello redondo rojo intenso con gráfico de El Grinch.</p>
+                    <button class="btn-details" onclick="openModal('imagen 7.jpeg', 'Buzo The Grinch Red', 'Buzo de algodón sin capota con ilustración de The Grinch y texturas invernales en las mangas.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="product-card" data-category="navidad">
+                <span class="product-badge badge-family">FAMILIAR</span>
+                <div class="img-wrapper"><img src="imagen 8.jpeg" alt="Colección Familiar Grinch" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Colección Familiar Grinch</h3>
+                    <p class="product-desc-short">Buzos blancos con detalles de cremallera e ilustración del Grinch.</p>
+                    <button class="btn-details" onclick="openModal('imagen 8.jpeg', 'Colección Familiar Grinch', 'Diseños familiares en blanco con capotas rojas e ilustración realista del Grinch con cierre.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 9 -->
+            <div class="product-card" data-category="anime">
+                <span class="product-badge badge-top">TOP VENTAS</span>
+                <div class="img-wrapper"><img src="imagen 9.jpeg" alt="Buzo Goku Super Saiyan" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Goku Super Saiyan</h3>
+                    <p class="product-desc-short">Estampado de Goku con aura azul en espalda y mangas.</p>
+                    <button class="btn-details" onclick="openModal('imagen 9.jpeg', 'Buzo Goku Super Saiyan', 'Edición especial de Dragon Ball Z con gráficos detallados de Goku en la espalda y ambas mangas sobre fondo blanco.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 10 -->
+            <div class="product-card" data-category="anime">
+                <span class="product-badge badge-limited">OVERSIZED</span>
+                <div class="img-wrapper"><img src="imagen 10.jpeg" alt="Buzo Gojo Satoru Dark" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Gojo Satoru Dark</h3>
+                    <p class="product-desc-short">Diseño manga Jujutsu Kaisen en tonos negro y morado.</p>
+                    <button class="btn-details" onclick="openModal('imagen 10.jpeg', 'Buzo Gojo Satoru Dark', 'Hoodie oversized negro con ilustración de Satoru Gojo, aura púrpura y letras japonesas en mangas.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 11 -->
+            <div class="product-card" data-category="streetwear">
+                <div class="img-wrapper"><img src="imagen 11.jpeg" alt="Buzo Gucci Luxury Style" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Gucci Luxury Style</h3>
+                    <p class="product-desc-short">Diseño minimalista bicolor en blanco y negro con logo.</p>
+                    <button class="btn-details" onclick="openModal('imagen 11.jpeg', 'Buzo Gucci Luxury Style', 'Buzo con corte moderno de bloques de color en blanco y negro, estampado tipo marca de alta costura.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 12 -->
+            <div class="product-card" data-category="caricaturas">
+                <div class="img-wrapper"><img src="imagen 12.jpeg" alt="Buzo Minnie Heart Hands" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Minnie Heart Hands</h3>
+                    <p class="product-desc-short">Diseño blanco con manos de Mickey/Minnie formando un corazón y capota roja.</p>
+                    <button class="btn-details" onclick="openModal('imagen 12.jpeg', 'Buzo Minnie Heart Hands', 'Hoodie blanco en tela suave con interior de capota roja y cordones negros. Presenta un estampado de manos icónicas formando un corazón con moño rojo de lunares.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 13 -->
+            <div class="product-card" data-category="streetwear">
+                <div class="img-wrapper"><img src="imagen 13.jpeg" alt="Buzo Deportivo Junior FC" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Deportivo Junior FC</h3>
+                    <p class="product-desc-short">Diseño deportivo en rojo y blanco con el escudo del Junior FC.</p>
+                    <button class="btn-details" onclick="openModal('imagen 13.jpeg', 'Buzo Deportivo Junior FC', 'Hoodie deportivo en tonos rojo y blanco con estampado oficial del equipo Junior FC en pechera y mangas.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 14 -->
+            <div class="product-card" data-category="caricaturas">
+                <div class="img-wrapper"><img src="imagen 14.jpeg" alt="Buzo Garfield Coffee Collection" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Garfield Coffee Collection</h3>
+                    <p class="product-desc-short">Conjunto en tonos café y marrón con gráficos de Garfield.</p>
+                    <button class="btn-details" onclick="openModal('imagen 14.jpeg', 'Buzo Garfield Coffee Collection', 'Colección especial en tonos café y chocolate de Garfield. Estilo urbano y cómodo en tela de alta densidad.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 15 -->
+            <div class="product-card" data-category="caricaturas">
+                <div class="img-wrapper"><img src="imagen 15.jpeg" alt="Buzo Garfield Colors Edition" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Garfield Colors Edition</h3>
+                    <p class="product-desc-short">Variedad de estilos de Garfield en tonos verde, azul y marrón.</p>
+                    <button class="btn-details" onclick="openModal('imagen 15.jpeg', 'Buzo Garfield Colors Edition', 'Edición especial de buzos Garfield con combinaciones de colores vibrantes y acabados premium.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 16 -->
+            <div class="product-card" data-category="caricaturas streetwear">
+                <div class="img-wrapper"><img src="imagen 16.jpeg" alt="Buzo Snoopy Streetwear" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Snoopy Streetwear</h3>
+                    <p class="product-desc-short">Estilo urbano con ilustraciones de Snoopy cool en blanco y azul.</p>
+                    <button class="btn-details" onclick="openModal('imagen 16.jpeg', 'Buzo Snoopy Streetwear', 'Hoodie de diseño urbano con gráficos modernos de Snoopy con gafas de sol en colores blanco y azul marino.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 17 -->
+            <div class="product-card" data-category="streetwear">
+                <span class="product-badge badge-new">NUEVO</span>
+                <div class="img-wrapper"><img src="WhatsApp Image 2026-11-11 at 10.03.48 AM (1).jpeg" alt="Buzo Katseye Fan Edition" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Katseye Fan Edition</h3>
+                    <p class="product-desc-short">Buzo cuello redondo rosado con ilustración de Katseye, firmas y lightstick.</p>
+                    <button class="btn-details" onclick="openModal('WhatsApp Image 2026-11-11 at 10.03.48 AM (1).jpeg', 'Buzo Katseye Fan Edition', 'Buzo cuello redondo en tono rosado pastel con estampado frontal de KATSEYE, retrato grupal en tonos neón, firmas y detalle de lightstick en la manga. Disponible en varios colores.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 18 -->
+            <div class="product-card" data-category="navidad">
+                <span class="product-badge badge-xmas">NAVIDAD</span>
+                <div class="img-wrapper"><img src="WhatsApp Image 2026-11-11 at 10.03.48 AM.jpeg" alt="Hoodie Navideño Santa y Reno" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Hoodie Navideño Santa y Reno</h3>
+                    <p class="product-desc-short">Hoodie rojo con estampado de Papá Noel y reno navideño.</p>
+                    <button class="btn-details" onclick="openModal('WhatsApp Image 2026-11-11 at 10.03.48 AM.jpeg', 'Hoodie Navideño Santa y Reno', 'Hoodie con capota en color rojo intenso con ilustraciones navideñas de Papá Noel asomándose y un reno con cascabel y lazo. Disponible en varios tonos.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 19 -->
+            <div class="product-card" data-category="navidad">
+                <span class="product-badge badge-new">PERSONALIZADO</span>
+                <div class="img-wrapper"><img src="WhatsApp Image 2026-11-11 at 10.03.47 AM (2).jpeg" alt="Buzo Navideño Personalizado" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Navideño Personalizado</h3>
+                    <p class="product-desc-short">Buzo cuello redondo con inicial, gorro de Santa, astas y nombre.</p>
+                    <button class="btn-details" onclick="openModal('WhatsApp Image 2026-11-11 at 10.03.47 AM (2).jpeg', 'Buzo Navideño Personalizado', 'Buzo cuello redondo en verde esmeralda con estampado navideño de letra inicial, gorro de Papá Noel, astas de reno, esferas y nombre personalizado. Disponible en distintos colores.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 20 -->
+            <div class="product-card" data-category="navidad">
+                <span class="product-badge badge-xmas">NAVIDAD</span>
+                <div class="img-wrapper"><img src="WhatsApp Image 2026-11-11 at 10.03.47 AM (1).jpeg" alt="Buzo Navideño Oh Snap Gingerbread" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Buzo Navideño "Oh Snap!"</h3>
+                    <p class="product-desc-short">Buzo crema con galleta de jengibre navideña y texto Oh Snap!</p>
+                    <button class="btn-details" onclick="openModal('WhatsApp Image 2026-11-11 at 10.03.47 AM (1).jpeg', 'Buzo Navideño Oh Snap!', 'Buzo cuello redondo en tono crema con estampado navideño de galleta de jengibre con gorro de Santa, caramelos y frase OH SNAP! Disponible en varios colores.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- Producto 21 -->
+            <div class="product-card" data-category="navidad">
+                <span class="product-badge badge-top">TENDENCIA</span>
+                <div class="img-wrapper"><img src="WhatsApp Image 2026-11-11 at 10.03.47 AM.jpeg" alt="Colección Buzos Grinchy Navideños" class="product-img"></div>
+                <div class="card-body">
+                    <h3 class="product-title">Colección Buzos Grinchy</h3>
+                    <p class="product-desc-short">Diseños navideños del Grinch en rosado, crema, gris y verde.</p>
+                    <button class="btn-details" onclick="openModal('WhatsApp Image 2026-11-11 at 10.03.47 AM.jpeg', 'Colección Buzos Grinchy', 'Buzos cuello redondo temáticos del Grinch con ilustraciones festivas, tipografías llamativas y detalles navideños en varios colores.')">
+                        <i class="fa-solid fa-eye"></i> Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SECCIÓN LA MARCA (SIN ATELIER NI CLIENTES) -->
+    <section id="experiencia" class="brand-experience-section">
+        <div class="section-wrapper">
+            <p class="eyebrow-title">ESTÁNDAR DE EXCELENCIA</p>
+            <h2 class="section-title">EL SELLO LG BUZOS</h2>
+            <div class="divider"></div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+                    <h3>Textiles Seleccionados</h3>
+                    <p>Algodón perchado suave al tacto, térmico y resistente al uso diario sin perder su caída original.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Estampado Ultra HD</h3>
+                    <p>Acabados de alta definición con colores vibrantes y nitidez impecable en cada trazo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Calidad Garantizada</h3>
+                    <p>Costuras reforzadas y acabados cuidados en cada prenda confeccionada en nuestra fábrica.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <h3>Presentación de Lujo</h3>
+                    <p>Cada pedido se entrega cuidadosamente empacado con la identidad dorada de LG BUZOS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="Nosotros.jpeg" alt="Nosotros - LG Buzos Packaging">
+            </div>
+            <div class="about-content">
+                <p class="eyebrow-left">NUESTRA ESENCIA</p>
+                <h2>SOBRE NOSOTROS</h2>
+                <div class="divider-left"></div>
+                <p class="quote">"El complemento perfecto para tu día a día. Estilo único para alguien único como tú."</p>
+                <p class="about-description">
+                    En <strong>LG BUZOS (Luxury Hoodies Factory)</strong> nos dedicamos a confeccionar buzos de la más alta calidad, combinando moda urbana, comodidad e identidad única. Cada prenda está diseñada cuidando el mínimo detalle para garantizar durabilidad y distinción en tu vestir diario.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VENTANA MODAL INTERACTIVA -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div class="modal-img-container">
+                <img id="modalImage" src="" alt="Vista previa del buzo">
+            </div>
+            <div class="modal-info-body">
+                <h3 id="modalTitle" class="modal-title">Nombre del Producto</h3>
+                <p id="modalDescription" class="modal-description">Descripción detallada del producto...</p>
+                <a id="whatsappBtn" href="#" target="_blank" class="btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Preguntar en WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTONES FLOTANTES DE ACCESO RÁPIDO -->
+    <div class="floating-actions">
+        <button id="backToTop" class="float-top" onclick="scrollToTop()" title="Volver arriba">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+        <a href="https://api.whatsapp.com/send?phone=573107707763&text=Hola%20LG%20BUZOS,%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="float-whatsapp" title="Chatear por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- FOOTER CON REDES SOCIALES, CONTADOR Y FIRMA GRANDE -->
+    <footer id="contacto">
+        <div class="footer-container">
+            <p class="social-title">SÍGUENOS Y CONTÁCTANOS</p>
+            <div class="social-links">
+                <a href="https://api.whatsapp.com/send?phone=573107707763&text=Quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" class="social-btn whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp 
+                </a>
+                <a href="https://www.instagram.com/lgbuzos?vrfl=dmU2YjF4Ym1nYzBl" target="_blank" class="social-btn instagram">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com/share/19uLGMhU3H/" target="_blank" class="social-btn facebook">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+            </div>
+
+            <!-- CONTADOR DE VISITAS AL FONDO -->
+            <div class="visitors-container">
+                <i class="fa-solid fa-users text-gold"></i>
+                <span class="visitors-text">Visitas a la página: <strong id="visitCount">0</strong></span>
+            </div>
+
+            <p class="copyright">&copy; 2026 LG BUZOS. Todos los derechos reservados.</p>
+
+            <!-- FIRMA ELEGANTE AL FONDO DE TODO -->
+            <div class="bottom-brand">
+                LG BUZOS
+            </div>
+        </div>
+    </footer>
+
+    <script src="java script.js"></script>
+</body>
+</html>
